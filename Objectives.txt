@@ -1,0 +1,30 @@
+
+Basic Setup
+ Bootstrap 5 layout
+ Mobile responsiveness
+ Hero/banner image with title and subtext
+ Google Fonts (Playfair Display & Dancing Script)
+ Navbar with working anchor links
+
+The Eras Section
+ Era cards with images and custom descriptions
+ Cards arranged in rows and centered last card
+ Each card has:
+ Spotify button 
+ YouTube playlist button 
+ Era-specific colors for each card
+ Animated card entrance using AOS
+
+Styling & Fonts
+ Times New Roman for headers
+ Custom card theme per album
+ Responsive styling preserved on small screens
+
+Theme Toggle
+ Light/Dark mode toggle switch
+ Dark mode does not cover the banner (fixed ✅)
+
+Bonus Sections
+ Explore More: YouTube & official site buttons
+ Favorite Lyrics section (Prophecy, Dear Reader, Guilty as Sin, etc.)
+ “Which Era Are You?” contact form (select + custom mood-based choices)

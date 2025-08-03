@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taylor Swift Eras</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Dancing Script Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation CSS for making web more alive-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="glitterLoader">
+      <div class="glitter"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The Eras</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#eras">Eras</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#albums">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <li class="nav-item d-flex align-items-center ms-3">
+            <div class="form-check form-switch text-white">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="themeToggle"
+                style="cursor: pointer"
+              />
+              <label class="form-check-label ms-1" for="themeToggle">🌙</label>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <!--
+    <div class="form-check form-switch text-end p-3">
+      <input class="form-check-input" type="checkbox" id="themeToggle" />
+      <label class="form-check-label" for="themeToggle"
+        >🌙 Toggle Dark Mode</label
+      >
+    </div>
+-->
+    <!-- Hero Section -->
+    <header
+      class="text-white text-center"
+      style="
+        background-image: url('img/eras-banner.webp');
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+      "
+    >
+      <div
+        class="container h-100 d-flex flex-column justify-content-center align-items-center bg-dark bg-opacity-50 px-3 text-wrap"
+      >
+        <h1 class="fw-bold">The Eras</h1>
+        <p class="lead">A journey through every iconic Taylor Swift era</p>
+        <a href="#eras" class="btn btn-light btn-lg mt-3 px-4 fw-semibold"
+          >Explore the Eras</a
+        >
+      </div>
+    </header>
+
+    <!-- Eras Section -->
+    <section id="eras" class="py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4">The Eras</h2>
+
+        <!-- All cards must be inside this single .row otherwise it will not aligned-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <!-- Debut -->
+          <div class="col">
+            <div
+              class="card h-100 debut"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img
+                src="img/debut-era.png"
+                class="card-img-top"
+                alt="Debut Era"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Debut</h5>
+                <p class="card-text">
+                  Taylor's country roots began here raw, heartfelt, and twangy.
+                  "Tim McGraw" and "Our Song" made her a teen superstar.
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/5eyZZoQEFQWRHkV2xgAeBw"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxPAzWwlPV3BCP8cL4Fd-AIo"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fearless -->
+          <div class="col">
+            <div
+              class="card h-100 fearless"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img
+                src="img/fearless-era.png"
+                class="card-img-top"
+                alt="Fearless Era"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fearless</h5>
+                <p class="card-text">
+                  Winning Album of the Year in 2010, this era gave us "Love
+                  Story" and "You Belong with Me." Iconic curls and sparkles.
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/4hDok0OAJd57SGIT8xuWJH"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxMfr4O8gAC7Y9m6vBrCwG7Y"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speak Now -->
+          <div class="col">
+            <div
+              class="card h-100 speaknow"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img
+                src="img/speaknow-era.png"
+                class="card-img-top"
+                alt="Speak Now Era"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Speak Now</h5>
+                <p class="card-text">
+                  Written entirely by Taylor, this purple era was all about
+                  self-expression and storytelling "Enchanted" vibes all around.
+                </p>
+
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/5AEDGbliTTfjOB8TSm1sxt"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxOnXN8UcbpW23n5AFj0IJmN"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Red -->
+          <div class="col">
+            <div
+              class="card h-100 red"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img src="img/red-era.png" class="card-img-top" alt="Red Era" />
+              <div class="card-body">
+                <h5 class="card-title">Red</h5>
+                <p class="card-text">
+                  Passionate and messy “I Knew You Were Trouble” and “All Too
+                  Well” (10 min version supremacy). Welcome to pop fusion.
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/6kZ42qRrzov54LcAk4onW9"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxPcGJvHv9n3KAzUJDTTuZdj"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 1989 -->
+          <div class="col">
+            <div
+              class="card h-100 nineteeneightynine"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img src="img/1989.png" class="card-img-top" alt="1989 Era" />
+              <div class="card-body">
+                <h5 class="card-title">1989</h5>
+                <p class="card-text">
+                  Her full pop reinvention. Glossy synths, NYC vibes, red lips,
+                  and anthems like “Blank Space” and “Style.”
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/1o59UpKw81iHR0HPiSkJR0"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxO5KZ9Uv0yoU7Dnhu8t2Whu"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- reputation -->
+          <div class="col">
+            <div
+              class="card h-100 reputation"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img
+                src="img/reputation-era.png"
+                class="card-img-top"
+                alt="Reputation Era"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Reputation</h5>
+                <p class="card-text">
+                  Snake emoji era 🐍. Dark, defiant, and sexy “Look What You
+                  Made Me Do” and “Delicate” showed us her reinvention.
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/6DEjYFkNZh67HP7R9PSZvv"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxPKdUgLmlXcUmBPjkz4rUel"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- lover -->
+          <div class="col">
+            <div
+              class="card h-100 lover"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img
+                src="img/lover-era.png"
+                class="card-img-top"
+                alt="Lover Era"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lover</h5>
+                <p class="card-text">
+                  oft pastels and healing. From “Cruel Summer” to “The Archer,”
+                  she made self-love a mood board
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/1NAmidJlEaVgA3MpcPFYGq"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxPWaEUEDGKYz6LxIfOrWJ62"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- folkore -->
+          <div class="col">
+            <div
+              class="card h-100 folkore"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img
+                src="img/folklore-era.png"
+                class="card-img-top"
+                alt="Speak Now Era"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Folkore</h5>
+                <p class="card-text">
+                  Indie cottagecore in grayscale. Quarantine masterpiece.
+                  “Cardigan,” “Exile,” and “The Last Great American Dynasty.”
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/2fenSS68JI1h4Fo296JfGr"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxMkLZxydYUYozljcuAykb27"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Evermore -->
+          <div class="col">
+            <div
+              class="card h-100 evermore"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img
+                src="img/evermore-era.png"
+                class="card-img-top"
+                alt="Evermore Era"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Evermore</h5>
+                <p class="card-text">
+                  The sister album to Folklore. More mysteries, mellow melodies,
+                  and poetic sadness in “Champagne Problems” and “Tolerate It.”
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/6AORtDjduMM3bupSWzbTSG"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxNeDcT6RYaIWkYl0ylvBlnR"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Midnights (centered in last row) -->
+          <div class="col-md-4 offset-md-4">
+            <div
+              class="card h-100 midnights"
+              data-aos="flip-left"
+              data-aos-delay="200"
+              data-aos-duration="700"
+            >
+              <img
+                src="img/midnight-era.png"
+                class="card-img-top"
+                alt="Midnights Era"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Midnights</h5>
+                <p class="card-text">
+                  Sleepless thoughts, glitter, revenge, and synths. “Anti-Hero”
+                  became the anthem of inner chaos and vulnerability.
+                </p>
+                <!--Button for spotify and youtube-->
+                <div class="mt-3">
+                  <a
+                    href="https://open.spotify.com/album/151w1FgRZfnKZA9FEcg9Z3"
+                    target="_blank"
+                    class="btn btn-success btn-sm me-2"
+                    >Spotify</a
+                  >
+                  <a
+                    href="https://youtube.com/playlist?list=PLINj2JJM1jxPBfJp4BhRtCe8FjzZ2jC1A"
+                    target="_blank"
+                    class="btn btn-danger btn-sm"
+                    >YouTube</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of row -->
+      </div>
+      <!-- end of container -->
+    </section>
+
+    <!-- External Links -->
+    <section id="albums" class="py-5 bg-light text-center">
+      <div class="container">
+        <h2 class="mb-4">Explore More</h2>
+        <p class="mb-4">
+          Dive deeper into Taylor's music and official updates:
+        </p>
+        <a
+          href="https://www.youtube.com/user/taylorswift"
+          target="_blank"
+          class="btn btn-danger btn-lg mx-2"
+          >YouTube Channel</a
+        >
+        <a
+          href="https://www.taylorswift.com/"
+          target="_blank"
+          class="btn btn-primary btn-lg mx-2"
+          >Official Website</a
+        >
+      </div>
+    </section>
+
+    <!-- Favorite Lyrics Section -->
+    <section id="lyrics" class="py-5 text-center bg-light">
+      <div class="container">
+        <h2 class="mb-4" style="font-family: 'Times New Roman', Times, serif">
+          Favorite Lyrics
+        </h2>
+
+        <blockquote class="blockquote">
+          <p class="mb-4 fst-italic">
+            "But none of it is changin' That the chariot is waitin' Hearts are
+            hers for the breakin' There's escape in escaping"
+          </p>
+          <footer class="blockquote-footer">Bolter</footer>
+        </blockquote>
+
+        <blockquote class="blockquote">
+          <p class="mb-4 fst-italic">
+            "Dear reader, if it feels like a trap, you're already in one."
+          </p>
+          <footer class="blockquote-footer">Dear Reader</footer>
+        </blockquote>
+
+        <blockquote class="blockquote">
+          <p class="mb-4 fst-italic">
+            "What if the way you hold me Is actually what's holy?"
+          </p>
+          <footer class="blockquote-footer">Guilty as Sin?</footer>
+        </blockquote>
+
+        <blockquote class="blockquote">
+          <p class="mb-4 fst-italic">
+            "I'll tell you something about my good name, It's mine alone to
+            disgrace"
+          </p>
+          <footer class="blockquote-footer">But Daddy I Love Him</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Which Era Are You? Form -->
+    <section id="contact" class="py-5 text-center bg-light">
+      <div class="container">
+        <h2 class="mb-4" style="font-family: 'Times New Roman', Times, serif">
+          Which Era Are You?
+        </h2>
+        <p class="mb-4">
+          Tell us your vibe, and we’ll match you to a Taylor era 💖
+        </p>
+
+        <form class="mx-auto" style="max-width: 500px">
+          <input
+            type="text"
+            class="form-control mb-3"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            class="form-control mb-3"
+            placeholder="Your Email"
+            required
+          />
+
+          <select class="form-select mb-3" required>
+            <option selected disabled>Choose your mood...</option>
+            <option value="Debut">
+              I'm a dreamer with cowboy boots (Debut)
+            </option>
+            <option value="1989">City lights and synth-pop (1989)</option>
+            <option value="Reputation">
+              I slither through betrayal and rebirth (Reputation)
+            </option>
+            <option value="Folklore">
+              I write poetry in the woods (Folklore)
+            </option>
+            <option value="Midnights">I overthink at 2AM (Midnights)</option>
+            <option value="Lover">I cry over pastel sunsets (Lover)</option>
+            <option value="Evermore">
+              I wear flannels and tolerate things (Evermore)
+            </option>
+          </select>
+
+          <textarea
+            class="form-control mb-3"
+            rows="3"
+            placeholder="Why does this feel like your era?"
+          ></textarea>
+
+          <button type="submit" class="btn btn-dark">Reveal My Era</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">© 2025 Swiftie Fan Page. Made with 💖</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const toggle = document.getElementById("themeToggle");
+      toggle.addEventListener("change", () => {
+        document.body.classList.toggle("dark-mode");
+      });
+    </script>
+    <script>
+      window.addEventListener("load", () => {
+        const loader = document.getElementById("glitterLoader");
+        loader.style.transition = "opacity 0.6s ease";
+        loader.style.opacity = 0;
+        setTimeout(() => (loader.style.display = "none"), 600);
+      });
+    </script>
+  </body>
+</html>
