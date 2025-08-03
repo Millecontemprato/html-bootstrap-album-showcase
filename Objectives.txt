@@ -22,9 +22,10 @@ Styling & Fonts
 
 Theme Toggle
  Light/Dark mode toggle switch
- Dark mode does not cover the banner (fixed ✅)
+ Dark mode does not cover the banner
 
 Bonus Sections
  Explore More: YouTube & official site buttons
  Favorite Lyrics section (Prophecy, Dear Reader, Guilty as Sin, etc.)
  “Which Era Are You?” contact form (select + custom mood-based choices)
+
