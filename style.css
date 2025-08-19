@@ -124,7 +124,14 @@ header a.btn:hover {
 }
 
 .card.midnights {
+  
   background-color: #dcd6f7; /* dreamy periwinkle */
+}
+
+.life-of-the-show-girl-era{
+  border-top: 5px solid gold; /* keeps the golden accent */
+  background: linear-gradient(to bottom right, #FFA500, #FFEDD5); /* orange to soft peach */
+  color: #2c2c2c; /* keeps text readable */
 }
 
 .card a.btn {
@@ -139,9 +146,6 @@ header a.btn:hover {
 }
 
 /*for upbutton*/
-
-
-
 #glitterLoader {
   position: fixed;
   top: 0;
